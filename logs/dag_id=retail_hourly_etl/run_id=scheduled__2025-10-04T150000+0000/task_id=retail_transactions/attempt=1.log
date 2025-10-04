@@ -1,0 +1,40 @@
+[2025-10-04T16:02:08.107+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-04T16:02:08.210+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retail_hourly_etl.retail_transactions scheduled__2025-10-04T15:00:00+00:00 [queued]>
+[2025-10-04T16:02:08.238+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retail_hourly_etl.retail_transactions scheduled__2025-10-04T15:00:00+00:00 [queued]>
+[2025-10-04T16:02:08.241+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-10-04T16:02:08.279+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): retail_transactions> on 2025-10-04 15:00:00+00:00
+[2025-10-04T16:02:08.311+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=178) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-10-04T16:02:08.305+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'retail_hourly_etl', 'retail_transactions', 'scheduled__2025-10-04T15:00:00+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/retail_hourly_etl.py', '--cfg-path', '/tmp/tmpw9okq9h2']
+[2025-10-04T16:02:08.314+0000] {standard_task_runner.py:64} INFO - Started process 179 to run task
+[2025-10-04T16:02:08.315+0000] {standard_task_runner.py:91} INFO - Job 38: Subtask retail_transactions
+[2025-10-04T16:02:08.531+0000] {task_command.py:426} INFO - Running <TaskInstance: retail_hourly_etl.retail_transactions scheduled__2025-10-04T15:00:00+00:00 [running]> on host 7e205b81c5ae
+[2025-10-04T16:02:08.898+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='retail_hourly_etl' AIRFLOW_CTX_TASK_ID='retail_transactions' AIRFLOW_CTX_EXECUTION_DATE='2025-10-04T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-04T15:00:00+00:00'
+[2025-10-04T16:02:08.900+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-04T16:02:08.940+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-04T16:02:08.944+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/public/retail_transactions.py || exit 3']
+[2025-10-04T16:02:08.976+0000] {subprocess.py:86} INFO - Output:
+[2025-10-04T16:02:22.728+0000] {subprocess.py:93} INFO - 2025-10-04 16:02:22,727 - INFO - Running DBT command: run --select tag:retail_transactions --target prod --project-dir /opt/***/dbt --profiles-dir /opt/***/dbt
+[2025-10-04T16:02:24.305+0000] {subprocess.py:93} INFO - [0m16:02:24  Running with dbt=1.8.9
+[2025-10-04T16:02:26.148+0000] {subprocess.py:93} INFO - [0m16:02:26  Registered adapter: postgres=1.8.2
+[2025-10-04T16:02:26.995+0000] {subprocess.py:93} INFO - [0m16:02:26  Unable to do partial parsing because of a version mismatch
+[2025-10-04T16:02:30.228+0000] {subprocess.py:93} INFO - [0m16:02:30  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+[2025-10-04T16:02:30.230+0000] {subprocess.py:93} INFO - There are 1 unused configuration paths:
+[2025-10-04T16:02:30.231+0000] {subprocess.py:93} INFO - - models.lionparcel_dwh.staging
+[2025-10-04T16:02:30.733+0000] {subprocess.py:93} INFO - [0m16:02:30  Found 2 models, 1 source, 433 macros
+[2025-10-04T16:02:30.742+0000] {subprocess.py:93} INFO - [0m16:02:30
+[2025-10-04T16:02:31.878+0000] {subprocess.py:93} INFO - [0m16:02:31  Concurrency: 4 threads (target='prod')
+[2025-10-04T16:02:31.881+0000] {subprocess.py:93} INFO - [0m16:02:31
+[2025-10-04T16:02:31.908+0000] {subprocess.py:93} INFO - [0m16:02:31  1 of 1 START sql incremental model public.retail_transactions .................. [RUN]
+[2025-10-04T16:02:32.642+0000] {subprocess.py:93} INFO - [0m16:02:32  1 of 1 OK created sql incremental model public.retail_transactions ............. [[32mMERGE 20[0m in 0.72s]
+[2025-10-04T16:02:32.839+0000] {subprocess.py:93} INFO - [0m16:02:32
+[2025-10-04T16:02:32.847+0000] {subprocess.py:93} INFO - [0m16:02:32  Finished running 1 incremental model in 0 hours 0 minutes and 2.09 seconds (2.09s).
+[2025-10-04T16:02:33.233+0000] {subprocess.py:93} INFO - [0m16:02:33
+[2025-10-04T16:02:33.246+0000] {subprocess.py:93} INFO - [0m16:02:33  [32mCompleted successfully[0m
+[2025-10-04T16:02:33.253+0000] {subprocess.py:93} INFO - [0m16:02:33
+[2025-10-04T16:02:33.260+0000] {subprocess.py:93} INFO - [0m16:02:33  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2025-10-04T16:02:35.417+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-10-04T16:02:35.430+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-04T16:02:35.666+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=retail_hourly_etl, task_id=retail_transactions, run_id=scheduled__2025-10-04T15:00:00+00:00, execution_date=20251004T150000, start_date=20251004T160208, end_date=20251004T160235
+[2025-10-04T16:02:35.766+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-10-04T16:02:35.897+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-04T16:02:35.902+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

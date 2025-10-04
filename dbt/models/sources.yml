@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: schema_punten
+    schema: schema_punten
+    tables:
+      - name: stg_retail_transactions

@@ -1,0 +1,39 @@
+[2025-10-04T16:04:04.681+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-04T16:04:04.918+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bonus_test.lion_parcell_bonus_test scheduled__2025-10-04T15:00:00+00:00 [queued]>
+[2025-10-04T16:04:04.963+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bonus_test.lion_parcell_bonus_test scheduled__2025-10-04T15:00:00+00:00 [queued]>
+[2025-10-04T16:04:04.965+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-10-04T16:04:05.022+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): lion_parcell_bonus_test> on 2025-10-04 15:00:00+00:00
+[2025-10-04T16:04:05.071+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'bonus_test', 'lion_parcell_bonus_test', 'scheduled__2025-10-04T15:00:00+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/bonus_test.py', '--cfg-path', '/tmp/tmplbgyns4m']
+[2025-10-04T16:04:05.082+0000] {standard_task_runner.py:91} INFO - Job 40: Subtask lion_parcell_bonus_test
+[2025-10-04T16:04:05.087+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=241) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-10-04T16:04:05.090+0000] {standard_task_runner.py:64} INFO - Started process 242 to run task
+[2025-10-04T16:04:05.276+0000] {task_command.py:426} INFO - Running <TaskInstance: bonus_test.lion_parcell_bonus_test scheduled__2025-10-04T15:00:00+00:00 [running]> on host 7e205b81c5ae
+[2025-10-04T16:04:05.464+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='bonus_test' AIRFLOW_CTX_TASK_ID='lion_parcell_bonus_test' AIRFLOW_CTX_EXECUTION_DATE='2025-10-04T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-04T15:00:00+00:00'
+[2025-10-04T16:04:05.466+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-04T16:04:05.503+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-04T16:04:05.507+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/public/lion_parcell_bonus_test.py || exit 3']
+[2025-10-04T16:04:05.531+0000] {subprocess.py:86} INFO - Output:
+[2025-10-04T16:04:14.296+0000] {subprocess.py:93} INFO - 2025-10-04 16:04:14,296 - INFO - Running DBT command: run --select tag:lion_parcell_bonus_test --target prod --project-dir /opt/***/dbt --profiles-dir /opt/***/dbt
+[2025-10-04T16:04:14.529+0000] {subprocess.py:93} INFO - [0m16:04:14  Running with dbt=1.8.9
+[2025-10-04T16:04:15.334+0000] {subprocess.py:93} INFO - [0m16:04:15  Registered adapter: postgres=1.8.2
+[2025-10-04T16:04:16.104+0000] {subprocess.py:93} INFO - [0m16:04:16  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+[2025-10-04T16:04:16.105+0000] {subprocess.py:93} INFO - There are 1 unused configuration paths:
+[2025-10-04T16:04:16.106+0000] {subprocess.py:93} INFO - - models.lionparcel_dwh.staging
+[2025-10-04T16:04:16.438+0000] {subprocess.py:93} INFO - [0m16:04:16  Found 2 models, 1 source, 433 macros
+[2025-10-04T16:04:16.446+0000] {subprocess.py:93} INFO - [0m16:04:16
+[2025-10-04T16:04:17.226+0000] {subprocess.py:93} INFO - [0m16:04:17  Concurrency: 4 threads (target='prod')
+[2025-10-04T16:04:17.228+0000] {subprocess.py:93} INFO - [0m16:04:17
+[2025-10-04T16:04:17.256+0000] {subprocess.py:93} INFO - [0m16:04:17  1 of 1 START sql incremental model public.lion_parcell_bonus_test .............. [RUN]
+[2025-10-04T16:04:17.831+0000] {subprocess.py:93} INFO - [0m16:04:17  1 of 1 OK created sql incremental model public.lion_parcell_bonus_test ......... [[32mINSERT 0 4[0m in 0.57s]
+[2025-10-04T16:04:17.955+0000] {subprocess.py:93} INFO - [0m16:04:17
+[2025-10-04T16:04:17.957+0000] {subprocess.py:93} INFO - [0m16:04:17  Finished running 1 incremental model in 0 hours 0 minutes and 1.51 seconds (1.51s).
+[2025-10-04T16:04:18.044+0000] {subprocess.py:93} INFO - [0m16:04:18
+[2025-10-04T16:04:18.047+0000] {subprocess.py:93} INFO - [0m16:04:18  [32mCompleted successfully[0m
+[2025-10-04T16:04:18.050+0000] {subprocess.py:93} INFO - [0m16:04:18
+[2025-10-04T16:04:18.052+0000] {subprocess.py:93} INFO - [0m16:04:18  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2025-10-04T16:04:20.180+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-10-04T16:04:20.195+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-04T16:04:20.345+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=bonus_test, task_id=lion_parcell_bonus_test, run_id=scheduled__2025-10-04T15:00:00+00:00, execution_date=20251004T150000, start_date=20251004T160404, end_date=20251004T160420
+[2025-10-04T16:04:20.537+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-10-04T16:04:20.644+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-04T16:04:20.659+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

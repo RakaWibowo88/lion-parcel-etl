@@ -1,0 +1,17 @@
+name: 'lionparcel_dwh'
+version: '1.0'
+profile: 'lionparcel_profile'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+
+models:
+  lionparcel_dwh:
+    staging:
+      # +schema: schema_punten
+      +materialized: table
+    marts:
+      # +schema: public
+      +materialized: incremental

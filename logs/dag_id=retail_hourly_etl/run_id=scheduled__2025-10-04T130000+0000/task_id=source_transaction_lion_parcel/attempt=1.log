@@ -1,0 +1,120 @@
+[2025-10-04T14:00:02.650+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-04T14:00:02.997+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retail_hourly_etl.source_transaction_lion_parcel scheduled__2025-10-04T13:00:00+00:00 [queued]>
+[2025-10-04T14:00:03.016+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retail_hourly_etl.source_transaction_lion_parcel scheduled__2025-10-04T13:00:00+00:00 [queued]>
+[2025-10-04T14:00:03.018+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-10-04T14:00:03.053+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): source_transaction_lion_parcel> on 2025-10-04 13:00:00+00:00
+[2025-10-04T14:00:03.081+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'retail_hourly_etl', 'source_transaction_lion_parcel', 'scheduled__2025-10-04T13:00:00+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/retail_hourly_etl.py', '--cfg-path', '/tmp/tmp8nw1bbp6']
+[2025-10-04T14:00:03.085+0000] {standard_task_runner.py:91} INFO - Job 18: Subtask source_transaction_lion_parcel
+[2025-10-04T14:00:03.089+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=266) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-10-04T14:00:03.090+0000] {standard_task_runner.py:64} INFO - Started process 267 to run task
+[2025-10-04T14:00:03.259+0000] {task_command.py:426} INFO - Running <TaskInstance: retail_hourly_etl.source_transaction_lion_parcel scheduled__2025-10-04T13:00:00+00:00 [running]> on host ea5774b79526
+[2025-10-04T14:00:03.540+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='retail_hourly_etl' AIRFLOW_CTX_TASK_ID='source_transaction_lion_parcel' AIRFLOW_CTX_EXECUTION_DATE='2025-10-04T13:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-04T13:00:00+00:00'
+[2025-10-04T14:00:03.544+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-04T14:00:03.636+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-04T14:00:03.641+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/public/source_transaction_lion_parcel.py || exit 3']
+[2025-10-04T14:00:03.688+0000] {subprocess.py:86} INFO - Output:
+[2025-10-04T14:00:11.189+0000] {subprocess.py:93} INFO - 2025-10-04 14:00:11,189 - INFO - Database connection established successfully.
+[2025-10-04T14:00:11.190+0000] {subprocess.py:93} INFO - 2025-10-04 14:00:11,189 - INFO - Database connection established successfully.
+[2025-10-04T14:00:11.260+0000] {subprocess.py:93} INFO - 2025-10-04 14:00:11,259 - ERROR - Script execution failed: (psycopg2.errors.UndefinedTable) relation "schema_punten.source_transaction_lion_parcel" does not exist
+[2025-10-04T14:00:11.261+0000] {subprocess.py:93} INFO - LINE 12:  schema_punten.source_transaction_lion_parcel
+[2025-10-04T14:00:11.262+0000] {subprocess.py:93} INFO -           ^
+[2025-10-04T14:00:11.263+0000] {subprocess.py:93} INFO - 
+[2025-10-04T14:00:11.264+0000] {subprocess.py:93} INFO - [SQL:
+[2025-10-04T14:00:11.265+0000] {subprocess.py:93} INFO -     select
+[2025-10-04T14:00:11.266+0000] {subprocess.py:93} INFO - 	id,
+[2025-10-04T14:00:11.267+0000] {subprocess.py:93} INFO - 	customer_id,
+[2025-10-04T14:00:11.268+0000] {subprocess.py:93} INFO - 	last_status,
+[2025-10-04T14:00:11.270+0000] {subprocess.py:93} INFO - 	pos_origin,
+[2025-10-04T14:00:11.271+0000] {subprocess.py:93} INFO - 	pos_destination,
+[2025-10-04T14:00:11.272+0000] {subprocess.py:93} INFO - 	created_at,
+[2025-10-04T14:00:11.273+0000] {subprocess.py:93} INFO - 	updated_at,
+[2025-10-04T14:00:11.274+0000] {subprocess.py:93} INFO - 	deleted_at
+[2025-10-04T14:00:11.275+0000] {subprocess.py:93} INFO - from
+[2025-10-04T14:00:11.276+0000] {subprocess.py:93} INFO - 	schema_punten.source_transaction_lion_parcel
+[2025-10-04T14:00:11.277+0000] {subprocess.py:93} INFO -     ]
+[2025-10-04T14:00:11.278+0000] {subprocess.py:93} INFO - (Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-10-04T14:00:11.279+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-10-04T14:00:11.280+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+[2025-10-04T14:00:11.281+0000] {subprocess.py:93} INFO -     self.dialect.do_execute(
+[2025-10-04T14:00:11.282+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+[2025-10-04T14:00:11.283+0000] {subprocess.py:93} INFO -     cursor.execute(statement, parameters)
+[2025-10-04T14:00:11.284+0000] {subprocess.py:93} INFO - psycopg2.errors.UndefinedTable: relation "schema_punten.source_transaction_lion_parcel" does not exist
+[2025-10-04T14:00:11.285+0000] {subprocess.py:93} INFO - LINE 12:  schema_punten.source_transaction_lion_parcel
+[2025-10-04T14:00:11.286+0000] {subprocess.py:93} INFO -           ^
+[2025-10-04T14:00:11.287+0000] {subprocess.py:93} INFO - 
+[2025-10-04T14:00:11.288+0000] {subprocess.py:93} INFO - 
+[2025-10-04T14:00:11.289+0000] {subprocess.py:93} INFO - The above exception was the direct cause of the following exception:
+[2025-10-04T14:00:11.290+0000] {subprocess.py:93} INFO - 
+[2025-10-04T14:00:11.291+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-10-04T14:00:11.292+0000] {subprocess.py:93} INFO -   File "/opt/***/public/source_transaction_lion_parcel.py", line 102, in <module>
+[2025-10-04T14:00:11.293+0000] {subprocess.py:93} INFO -     main()
+[2025-10-04T14:00:11.294+0000] {subprocess.py:93} INFO -   File "/opt/***/public/source_transaction_lion_parcel.py", line 78, in main
+[2025-10-04T14:00:11.295+0000] {subprocess.py:93} INFO -     dfextract = extract(mssql_sferps_engine)
+[2025-10-04T14:00:11.296+0000] {subprocess.py:93} INFO -                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-10-04T14:00:11.297+0000] {subprocess.py:93} INFO -   File "/opt/***/public/source_transaction_lion_parcel.py", line 43, in extract
+[2025-10-04T14:00:11.298+0000] {subprocess.py:93} INFO -     dfsource = pd.read_sql(sql, con=engine)
+[2025-10-04T14:00:11.299+0000] {subprocess.py:93} INFO -                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-10-04T14:00:11.300+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 682, in read_sql
+[2025-10-04T14:00:11.302+0000] {subprocess.py:93} INFO -     return pandas_sql.read_query(
+[2025-10-04T14:00:11.304+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^
+[2025-10-04T14:00:11.305+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 1776, in read_query
+[2025-10-04T14:00:11.306+0000] {subprocess.py:93} INFO -     result = self.execute(sql, params)
+[2025-10-04T14:00:11.307+0000] {subprocess.py:93} INFO -              ^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-10-04T14:00:11.308+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 1599, in execute
+[2025-10-04T14:00:11.309+0000] {subprocess.py:93} INFO -     return self.con.exec_driver_sql(sql, *args)
+[2025-10-04T14:00:11.310+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-10-04T14:00:11.311+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1770, in exec_driver_sql
+[2025-10-04T14:00:11.312+0000] {subprocess.py:93} INFO -     return self._exec_driver_sql(
+[2025-10-04T14:00:11.313+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^
+[2025-10-04T14:00:11.314+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1674, in _exec_driver_sql
+[2025-10-04T14:00:11.315+0000] {subprocess.py:93} INFO -     ret = self._execute_context(
+[2025-10-04T14:00:11.316+0000] {subprocess.py:93} INFO -           ^^^^^^^^^^^^^^^^^^^^^^
+[2025-10-04T14:00:11.318+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+[2025-10-04T14:00:11.319+0000] {subprocess.py:93} INFO -     self._handle_dbapi_exception(
+[2025-10-04T14:00:11.320+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+[2025-10-04T14:00:11.321+0000] {subprocess.py:93} INFO -     util.raise_(
+[2025-10-04T14:00:11.322+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+[2025-10-04T14:00:11.324+0000] {subprocess.py:93} INFO -     raise exception
+[2025-10-04T14:00:11.325+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+[2025-10-04T14:00:11.326+0000] {subprocess.py:93} INFO -     self.dialect.do_execute(
+[2025-10-04T14:00:11.327+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+[2025-10-04T14:00:11.329+0000] {subprocess.py:93} INFO -     cursor.execute(statement, parameters)
+[2025-10-04T14:00:11.330+0000] {subprocess.py:93} INFO - sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) relation "schema_punten.source_transaction_lion_parcel" does not exist
+[2025-10-04T14:00:11.333+0000] {subprocess.py:93} INFO - LINE 12:  schema_punten.source_transaction_lion_parcel
+[2025-10-04T14:00:11.334+0000] {subprocess.py:93} INFO -           ^
+[2025-10-04T14:00:11.335+0000] {subprocess.py:93} INFO - 
+[2025-10-04T14:00:11.337+0000] {subprocess.py:93} INFO - [SQL:
+[2025-10-04T14:00:11.338+0000] {subprocess.py:93} INFO -     select
+[2025-10-04T14:00:11.339+0000] {subprocess.py:93} INFO - 	id,
+[2025-10-04T14:00:11.340+0000] {subprocess.py:93} INFO - 	customer_id,
+[2025-10-04T14:00:11.341+0000] {subprocess.py:93} INFO - 	last_status,
+[2025-10-04T14:00:11.342+0000] {subprocess.py:93} INFO - 	pos_origin,
+[2025-10-04T14:00:11.343+0000] {subprocess.py:93} INFO - 	pos_destination,
+[2025-10-04T14:00:11.344+0000] {subprocess.py:93} INFO - 	created_at,
+[2025-10-04T14:00:11.345+0000] {subprocess.py:93} INFO - 	updated_at,
+[2025-10-04T14:00:11.347+0000] {subprocess.py:93} INFO - 	deleted_at
+[2025-10-04T14:00:11.349+0000] {subprocess.py:93} INFO - from
+[2025-10-04T14:00:11.350+0000] {subprocess.py:93} INFO - 	schema_punten.source_transaction_lion_parcel
+[2025-10-04T14:00:11.351+0000] {subprocess.py:93} INFO -     ]
+[2025-10-04T14:00:11.352+0000] {subprocess.py:93} INFO - (Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-10-04T14:00:11.616+0000] {subprocess.py:97} INFO - Command exited with return code 3
+[2025-10-04T14:00:11.622+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-04T14:00:11.647+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 3.
+[2025-10-04T14:00:11.667+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=retail_hourly_etl, task_id=source_transaction_lion_parcel, run_id=scheduled__2025-10-04T13:00:00+00:00, execution_date=20251004T130000, start_date=20251004T140002, end_date=20251004T140011
+[2025-10-04T14:00:11.723+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 18 for task source_transaction_lion_parcel (Bash command failed. The command returned a non-zero exit code 3.; 267)
+[2025-10-04T14:00:11.773+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-10-04T14:00:11.832+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-04T14:00:11.842+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

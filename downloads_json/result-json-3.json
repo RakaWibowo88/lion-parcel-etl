@@ -1,0 +1,12 @@
+{
+    "MetricDataResults": [
+        {
+            "Id": "m2",
+            "Label": "VisualLoadTime",
+            "Timestamps": [],
+            "Values": [],
+            "StatusCode": "Complete"
+        }
+    ],
+    "Messages": []
+}

@@ -1,0 +1,17 @@
+# core db connector
+psycopg2-binary
+sqlalchemy
+pandas
+
+# dbt
+dbt-core~=1.8.0
+dbt-postgres~=1.8.0
+
+# kalau ada, tambahin modul lain yang dipakai script kamu
+pyodbc
+openpyxl
+# File processing
+pyarrow>=14.0.0  # untuk pandas.to_parquet()
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+

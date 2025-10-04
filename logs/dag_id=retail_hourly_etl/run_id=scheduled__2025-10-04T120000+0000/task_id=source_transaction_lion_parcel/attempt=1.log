@@ -1,0 +1,37 @@
+[2025-10-04T13:13:24.981+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-04T13:13:25.353+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retail_hourly_etl.source_transaction_lion_parcel scheduled__2025-10-04T12:00:00+00:00 [queued]>
+[2025-10-04T13:13:25.388+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retail_hourly_etl.source_transaction_lion_parcel scheduled__2025-10-04T12:00:00+00:00 [queued]>
+[2025-10-04T13:13:25.390+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-10-04T13:13:25.436+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): source_transaction_lion_parcel> on 2025-10-04 12:00:00+00:00
+[2025-10-04T13:13:25.515+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=210) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-10-04T13:13:25.519+0000] {standard_task_runner.py:64} INFO - Started process 211 to run task
+[2025-10-04T13:13:25.513+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'retail_hourly_etl', 'source_transaction_lion_parcel', 'scheduled__2025-10-04T12:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/retail_hourly_etl.py', '--cfg-path', '/tmp/tmpiija7qpl']
+[2025-10-04T13:13:25.535+0000] {standard_task_runner.py:91} INFO - Job 3: Subtask source_transaction_lion_parcel
+[2025-10-04T13:13:26.111+0000] {task_command.py:426} INFO - Running <TaskInstance: retail_hourly_etl.source_transaction_lion_parcel scheduled__2025-10-04T12:00:00+00:00 [running]> on host 46626da8f9ec
+[2025-10-04T13:13:26.717+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='retail_hourly_etl' AIRFLOW_CTX_TASK_ID='source_transaction_lion_parcel' AIRFLOW_CTX_EXECUTION_DATE='2025-10-04T12:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-04T12:00:00+00:00'
+[2025-10-04T13:13:26.721+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-04T13:13:26.949+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-04T13:13:26.957+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/script/public/source_transaction_lion_parcel.py || exit 3']
+[2025-10-04T13:13:27.001+0000] {subprocess.py:86} INFO - Output:
+[2025-10-04T13:13:27.694+0000] {subprocess.py:93} INFO - python: can't open file '/opt/***/script/public/source_transaction_lion_parcel.py': [Errno 2] No such file or directory
+[2025-10-04T13:13:27.706+0000] {subprocess.py:97} INFO - Command exited with return code 3
+[2025-10-04T13:13:27.712+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-04T13:13:27.775+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 3.
+[2025-10-04T13:13:27.799+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=retail_hourly_etl, task_id=source_transaction_lion_parcel, run_id=scheduled__2025-10-04T12:00:00+00:00, execution_date=20251004T120000, start_date=20251004T131325, end_date=20251004T131327
+[2025-10-04T13:13:27.843+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 3 for task source_transaction_lion_parcel (Bash command failed. The command returned a non-zero exit code 3.; 211)
+[2025-10-04T13:13:27.922+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-10-04T13:13:27.997+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-04T13:13:28.011+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

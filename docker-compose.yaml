@@ -1,0 +1,103 @@
+# docker compose build --no-cache --progress=plain
+# docker compose up -d
+# docker compose logs -f airflow-webserver
+# version: "3.8"
+
+x-airflow-common: &airflow-common
+  build: 
+    context: .
+    dockerfile: Dockerfile.airflow
+  # image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:2.9.3}
+  environment:
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+    # --- ENV untuk koneksi DWH dari task Python ---
+    DWH_ENGINE: postgresql+psycopg2
+    DWH_USER: postgres
+    DWH_PASSWORD: postgres
+    DWH_HOST: host.docker.internal  # penting: pakai host.docker.internal
+    DWH_PORT: "5432"
+    DWH_DATABASE: postgres
+    DBT_PROFILES_DIR: /opt/airflow/dbt
+    DBT_PROJECT_DIR: /opt/airflow/dbt
+
+    # --- flag agar config.py TIDAK override ke localhost ---
+    APP_ENV: container              # untuk local jalan di doker penting
+    # Opsional: install paket via entrypoint Airflow (isi nama paket, bukan path)
+    # _PIP_ADDITIONAL_REQUIREMENTS: "-r /requirements.txt"
+  volumes:
+    - ./dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
+    - ./plugins:/opt/airflow/plugins
+    - ./public:/opt/airflow/public
+    - ./etl:/opt/airflow/etl
+    - ./dbt:/opt/airflow/dbt
+    - ./requirements.txt:/requirements.txt
+  user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-0}"
+  depends_on:
+    postgres:
+      condition: service_healthy     # ⬅️ tunggu DB sehat
+
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U airflow -d airflow -h localhost"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+
+  airflow-init:
+    <<: *airflow-common
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        # kalau butuh paket tambahan, install di SINI untuk semua image base (sementara)
+        pip install --no-cache-dir -r /requirements.txt || true
+        airflow db init
+        airflow users create \
+          --username admin \
+          --firstname Admin --lastname User \
+          --role Admin --email admin@example.com \
+          --password admin
+
+  airflow-webserver:
+    <<: *airflow-common
+    command: webserver
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+    depends_on:
+      postgres:
+        condition: service_healthy
+      airflow-scheduler:
+        condition: service_started
+
+  airflow-scheduler:
+    <<: *airflow-common
+    command: scheduler
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  airflow-triggerer:
+    <<: *airflow-common
+    command: triggerer
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  postgres-db-volume:
