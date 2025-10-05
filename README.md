@@ -1,3 +1,16 @@
+ <!--flow soal pertama  -->
+jika source berubah 
+update schema_punten.source_transaction_lion_parcel
+set last_status = 'DONE'
+where id = 3;
+
+lalu jalanin public\source_transaction_lion_parcel.py
+untuk menarik data truncate insert ke table staging (public.stg_retail_transactions)
+
+setelah itu jalanin public\retail_transactions.py
+untuk melakukan update insert yang sesuai dengan soal
+
+
  <!--Database yang digunakan adalah database local jadi silahkan untuk menyesuaikan jika ingin test  -->
 # Lion Parcel Bonus ETL Pipeline
 
