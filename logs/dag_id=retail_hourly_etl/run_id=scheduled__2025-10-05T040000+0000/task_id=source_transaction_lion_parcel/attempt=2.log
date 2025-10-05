@@ -1,0 +1,53 @@
+[2025-10-05T05:15:35.478+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-05T05:15:36.088+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retail_hourly_etl.source_transaction_lion_parcel scheduled__2025-10-05T04:00:00+00:00 [queued]>
+[2025-10-05T05:15:36.166+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retail_hourly_etl.source_transaction_lion_parcel scheduled__2025-10-05T04:00:00+00:00 [queued]>
+[2025-10-05T05:15:36.177+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2025-10-05T05:15:36.316+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): source_transaction_lion_parcel> on 2025-10-05 04:00:00+00:00
+[2025-10-05T05:15:36.428+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=334) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-10-05T05:15:36.406+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'retail_hourly_etl', 'source_transaction_lion_parcel', 'scheduled__2025-10-05T04:00:00+00:00', '--job-id', '51', '--raw', '--subdir', 'DAGS_FOLDER/retail_hourly_etl.py', '--cfg-path', '/tmp/tmpmmyr097u']
+[2025-10-05T05:15:36.473+0000] {standard_task_runner.py:64} INFO - Started process 335 to run task
+[2025-10-05T05:15:36.474+0000] {standard_task_runner.py:91} INFO - Job 51: Subtask source_transaction_lion_parcel
+[2025-10-05T05:15:36.864+0000] {task_command.py:426} INFO - Running <TaskInstance: retail_hourly_etl.source_transaction_lion_parcel scheduled__2025-10-05T04:00:00+00:00 [running]> on host 4be1e35054da
+[2025-10-05T05:15:37.265+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='retail_hourly_etl' AIRFLOW_CTX_TASK_ID='source_transaction_lion_parcel' AIRFLOW_CTX_EXECUTION_DATE='2025-10-05T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-05T04:00:00+00:00'
+[2025-10-05T05:15:37.270+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-05T05:15:37.377+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-05T05:15:37.397+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/public/source_transaction_lion_parcel.py || exit 3']
+[2025-10-05T05:15:37.435+0000] {subprocess.py:86} INFO - Output:
+[2025-10-05T05:15:47.816+0000] {subprocess.py:93} INFO - 2025-10-05 05:15:47,816 - INFO - Database connection established successfully.
+[2025-10-05T05:15:47.820+0000] {subprocess.py:93} INFO - 2025-10-05 05:15:47,817 - INFO - Database connection established successfully.
+[2025-10-05T05:15:49.858+0000] {subprocess.py:93} INFO - <class 'pandas.core.frame.DataFrame'>
+[2025-10-05T05:15:49.867+0000] {subprocess.py:93} INFO - RangeIndex: 6 entries, 0 to 5
+[2025-10-05T05:15:49.875+0000] {subprocess.py:93} INFO - Data columns (total 8 columns):
+[2025-10-05T05:15:49.879+0000] {subprocess.py:93} INFO -  #   Column           Non-Null Count  Dtype
+[2025-10-05T05:15:49.881+0000] {subprocess.py:93} INFO - ---  ------           --------------  -----
+[2025-10-05T05:15:49.883+0000] {subprocess.py:93} INFO -  0   id               6 non-null      int64
+[2025-10-05T05:15:49.885+0000] {subprocess.py:93} INFO -  1   customer_id      6 non-null      object
+[2025-10-05T05:15:49.888+0000] {subprocess.py:93} INFO -  2   last_status      6 non-null      object
+[2025-10-05T05:15:49.890+0000] {subprocess.py:93} INFO -  3   pos_origin       6 non-null      object
+[2025-10-05T05:15:49.892+0000] {subprocess.py:93} INFO -  4   pos_destination  6 non-null      object
+[2025-10-05T05:15:49.893+0000] {subprocess.py:93} INFO -  5   created_at       6 non-null      datetime64[ns, UTC]
+[2025-10-05T05:15:49.895+0000] {subprocess.py:93} INFO -  6   updated_at       6 non-null      datetime64[ns, UTC]
+[2025-10-05T05:15:49.898+0000] {subprocess.py:93} INFO -  7   loaded_at        6 non-null      datetime64[ns, UTC]
+[2025-10-05T05:15:49.900+0000] {subprocess.py:93} INFO - dtypes: datetime64[ns, UTC](3), int64(1), object(4)
+[2025-10-05T05:15:49.903+0000] {subprocess.py:93} INFO - memory usage: 1.6 KB
+[2025-10-05T05:15:49.906+0000] {subprocess.py:93} INFO - <class 'pandas.core.frame.DataFrame'>
+[2025-10-05T05:15:49.908+0000] {subprocess.py:93} INFO - RangeIndex: 6 entries, 0 to 5
+[2025-10-05T05:15:49.910+0000] {subprocess.py:93} INFO - Data columns (total 8 columns):
+[2025-10-05T05:15:49.912+0000] {subprocess.py:93} INFO -  #   Column           Non-Null Count  Dtype
+[2025-10-05T05:15:49.914+0000] {subprocess.py:93} INFO - ---  ------           --------------  -----
+[2025-10-05T05:15:49.915+0000] {subprocess.py:93} INFO -  0   id               6 non-null      int64
+[2025-10-05T05:15:49.917+0000] {subprocess.py:93} INFO -  1   customer_id      6 non-null      object
+[2025-10-05T05:15:49.921+0000] {subprocess.py:93} INFO -  2   last_status      6 non-null      object
+[2025-10-05T05:15:49.922+0000] {subprocess.py:93} INFO -  3   pos_origin       6 non-null      object
+[2025-10-05T05:15:49.926+0000] {subprocess.py:93} INFO -  4   pos_destination  6 non-null      object
+[2025-10-05T05:15:49.928+0000] {subprocess.py:93} INFO -  5   created_at       6 non-null      datetime64[ns, UTC]
+[2025-10-05T05:15:49.930+0000] {subprocess.py:93} INFO -  6   updated_at       6 non-null      datetime64[ns, UTC]
+[2025-10-05T05:15:49.932+0000] {subprocess.py:93} INFO -  7   loaded_at        6 non-null      datetime64[ns, UTC]
+[2025-10-05T05:15:49.934+0000] {subprocess.py:93} INFO - dtypes: datetime64[ns, UTC](3), int64(1), object(4)
+[2025-10-05T05:15:49.936+0000] {subprocess.py:93} INFO - memory usage: 1.6 KB
+[2025-10-05T05:15:50.432+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-10-05T05:15:50.449+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-05T05:15:50.713+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=retail_hourly_etl, task_id=source_transaction_lion_parcel, run_id=scheduled__2025-10-05T04:00:00+00:00, execution_date=20251005T040000, start_date=20251005T051536, end_date=20251005T051550
+[2025-10-05T05:15:50.873+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-10-05T05:15:50.997+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-10-05T05:15:51.004+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

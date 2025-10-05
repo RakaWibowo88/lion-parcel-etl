@@ -28,7 +28,7 @@ def extract(engine):
 
     # SQL query
     sql = """
-    select
+  select
 	id,
 	customer_id,
 	last_status,
@@ -36,9 +36,9 @@ def extract(engine):
 	pos_destination,
 	created_at,
 	updated_at,
-	deleted_at
+	current_timestamp as loaded_at
 from
-	schema_punten.source_transaction_lion_parcel 
+	schema_punten.source_transaction_lion_parcel
     """
     dfsource = pd.read_sql(sql, con=engine)
     return dfsource    

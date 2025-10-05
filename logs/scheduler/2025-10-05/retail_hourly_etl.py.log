@@ -1,0 +1,197 @@
+[2025-10-05T05:08:20.561+0000] {processor.py:161} INFO - Started process (PID=159) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:08:20.565+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:08:20.585+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:08:20.582+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:08:20.751+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:08:21.074+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:08:21.073+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:08:21.275+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 0.773 seconds
+[2025-10-05T05:09:07.380+0000] {processor.py:161} INFO - Started process (PID=178) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:09:07.706+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:09:08.019+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:09:07.902+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:09:11.157+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:09:21.948+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:09:21.946+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:09:22.771+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 17.178 seconds
+[2025-10-05T05:09:54.998+0000] {processor.py:161} INFO - Started process (PID=206) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:09:55.011+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:09:55.024+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:09:55.022+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:09:55.405+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:09:55.911+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:09:55.909+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:09:56.502+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 1.602 seconds
+[2025-10-05T05:10:27.124+0000] {processor.py:161} INFO - Started process (PID=220) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:10:27.131+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:10:27.146+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:10:27.144+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:10:27.316+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:10:27.986+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:10:27.975+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:10:30.520+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 3.465 seconds
+[2025-10-05T05:11:02.801+0000] {processor.py:161} INFO - Started process (PID=244) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:11:02.822+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:11:02.871+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:11:02.867+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:11:03.278+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:11:04.451+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:11:04.450+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:11:05.339+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 2.708 seconds
+[2025-10-05T05:11:36.206+0000] {processor.py:161} INFO - Started process (PID=254) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:11:36.213+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:11:36.239+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:11:36.225+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:11:37.493+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:11:37.719+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:11:37.718+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:11:37.971+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:11:37.970+0000] {dag.py:3947} INFO - Setting next_dagrun for retail_hourly_etl to 2025-10-05 05:00:00+00:00, run_after=2025-10-05 06:00:00+00:00
+[2025-10-05T05:11:38.212+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 2.081 seconds
+[2025-10-05T05:12:08.738+0000] {processor.py:161} INFO - Started process (PID=264) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:12:08.750+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:12:08.756+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:12:08.755+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:12:08.858+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:12:10.070+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:12:10.069+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:12:10.150+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:12:10.150+0000] {dag.py:3947} INFO - Setting next_dagrun for retail_hourly_etl to 2025-10-05 05:00:00+00:00, run_after=2025-10-05 06:00:00+00:00
+[2025-10-05T05:12:10.239+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 1.525 seconds
+[2025-10-05T05:12:40.747+0000] {processor.py:161} INFO - Started process (PID=274) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:12:40.766+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:12:40.791+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:12:40.788+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:12:40.921+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:12:41.062+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:12:41.061+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:12:41.144+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:12:41.143+0000] {dag.py:3947} INFO - Setting next_dagrun for retail_hourly_etl to 2025-10-05 05:00:00+00:00, run_after=2025-10-05 06:00:00+00:00
+[2025-10-05T05:12:41.228+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 0.528 seconds
+[2025-10-05T05:13:14.883+0000] {processor.py:161} INFO - Started process (PID=284) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:13:15.081+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:13:16.645+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:13:16.296+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:13:17.699+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:13:18.537+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:13:18.536+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:13:19.164+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:13:19.157+0000] {dag.py:3947} INFO - Setting next_dagrun for retail_hourly_etl to 2025-10-05 05:00:00+00:00, run_after=2025-10-05 06:00:00+00:00
+[2025-10-05T05:13:19.461+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 5.636 seconds
+[2025-10-05T05:13:50.423+0000] {processor.py:161} INFO - Started process (PID=294) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:13:50.426+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:13:50.430+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:13:50.429+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:13:50.492+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:13:50.599+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:13:50.598+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:13:50.670+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:13:50.669+0000] {dag.py:3947} INFO - Setting next_dagrun for retail_hourly_etl to 2025-10-05 05:00:00+00:00, run_after=2025-10-05 06:00:00+00:00
+[2025-10-05T05:13:50.733+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 0.326 seconds
+[2025-10-05T05:14:21.908+0000] {processor.py:161} INFO - Started process (PID=304) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:14:21.947+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:14:22.279+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:14:22.188+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:14:22.948+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:14:23.537+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:14:23.536+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:14:24.011+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:14:24.011+0000] {dag.py:3947} INFO - Setting next_dagrun for retail_hourly_etl to 2025-10-05 05:00:00+00:00, run_after=2025-10-05 06:00:00+00:00
+[2025-10-05T05:14:24.523+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 2.747 seconds
+[2025-10-05T05:14:54.945+0000] {processor.py:161} INFO - Started process (PID=314) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:14:54.947+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:14:54.954+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:14:54.953+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:14:55.013+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:14:55.098+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:14:55.097+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:14:55.153+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:14:55.153+0000] {dag.py:3947} INFO - Setting next_dagrun for retail_hourly_etl to 2025-10-05 05:00:00+00:00, run_after=2025-10-05 06:00:00+00:00
+[2025-10-05T05:14:55.210+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 0.281 seconds
+[2025-10-05T05:15:25.857+0000] {processor.py:161} INFO - Started process (PID=324) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:15:25.860+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:15:25.865+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:15:25.864+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:15:25.918+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:15:26.156+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:15:26.155+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:15:26.271+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:15:26.271+0000] {dag.py:3947} INFO - Setting next_dagrun for retail_hourly_etl to 2025-10-05 05:00:00+00:00, run_after=2025-10-05 06:00:00+00:00
+[2025-10-05T05:15:26.338+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 0.494 seconds
+[2025-10-05T05:15:57.180+0000] {processor.py:161} INFO - Started process (PID=346) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:15:57.212+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:15:57.264+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:15:57.256+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:15:57.483+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:15:57.881+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:15:57.880+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:15:58.150+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 1.098 seconds
+[2025-10-05T05:16:29.081+0000] {processor.py:161} INFO - Started process (PID=371) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:16:29.129+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:16:29.212+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:16:29.199+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:16:29.804+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:16:30.374+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:16:30.373+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:16:30.680+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:16:30.679+0000] {dag.py:3947} INFO - Setting next_dagrun for retail_hourly_etl to 2025-10-05 05:00:00+00:00, run_after=2025-10-05 06:00:00+00:00
+[2025-10-05T05:16:30.869+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 1.977 seconds
+[2025-10-05T05:17:01.340+0000] {processor.py:161} INFO - Started process (PID=381) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:17:01.344+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:17:01.350+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:17:01.349+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:17:01.424+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:17:01.538+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:17:01.537+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:17:01.598+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:17:01.597+0000] {dag.py:3947} INFO - Setting next_dagrun for retail_hourly_etl to 2025-10-05 05:00:00+00:00, run_after=2025-10-05 06:00:00+00:00
+[2025-10-05T05:17:01.656+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 0.333 seconds
+[2025-10-05T05:17:32.289+0000] {processor.py:161} INFO - Started process (PID=391) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:17:32.295+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:17:32.344+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:17:32.335+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:17:32.880+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:17:33.647+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:17:33.645+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:17:34.037+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:17:34.036+0000] {dag.py:3947} INFO - Setting next_dagrun for retail_hourly_etl to 2025-10-05 05:00:00+00:00, run_after=2025-10-05 06:00:00+00:00
+[2025-10-05T05:17:34.191+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 2.034 seconds
+[2025-10-05T05:18:05.053+0000] {processor.py:161} INFO - Started process (PID=401) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:18:05.060+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:18:05.118+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:18:05.110+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:18:05.439+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:18:05.902+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:18:05.901+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:18:06.981+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 2.053 seconds
+[2025-10-05T05:18:37.967+0000] {processor.py:161} INFO - Started process (PID=423) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:18:37.979+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:18:38.030+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:18:38.022+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:18:38.258+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:18:38.623+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:18:38.622+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:18:39.029+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 1.273 seconds
+[2025-10-05T05:19:10.458+0000] {processor.py:161} INFO - Started process (PID=444) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:19:10.467+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:19:10.556+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:19:10.541+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:19:10.941+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:19:11.375+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:19:11.375+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:19:11.579+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:19:11.579+0000] {dag.py:3947} INFO - Setting next_dagrun for retail_hourly_etl to 2025-10-05 05:00:00+00:00, run_after=2025-10-05 06:00:00+00:00
+[2025-10-05T05:19:11.682+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 1.440 seconds
+[2025-10-05T05:19:42.912+0000] {processor.py:161} INFO - Started process (PID=454) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:19:42.924+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:19:43.009+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:19:42.995+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:19:43.862+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:19:44.948+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:19:44.943+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:19:45.410+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:19:45.409+0000] {dag.py:3947} INFO - Setting next_dagrun for retail_hourly_etl to 2025-10-05 05:00:00+00:00, run_after=2025-10-05 06:00:00+00:00
+[2025-10-05T05:19:45.644+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 2.890 seconds
+[2025-10-05T05:20:19.611+0000] {processor.py:161} INFO - Started process (PID=464) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:20:19.635+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:20:19.706+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:20:19.688+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:20:21.750+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:20:23.093+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:20:23.088+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:20:23.945+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 4.917 seconds
+[2025-10-05T05:21:01.943+0000] {processor.py:161} INFO - Started process (PID=478) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:21:01.999+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:21:02.137+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:21:02.103+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:21:08.742+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:21:10.297+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:21:10.296+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:21:11.164+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 9.534 seconds
+[2025-10-05T05:21:41.983+0000] {processor.py:161} INFO - Started process (PID=499) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:21:41.992+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:21:42.002+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:21:42.001+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:21:42.087+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:21:42.280+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:21:42.279+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:21:42.357+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:21:42.357+0000] {dag.py:3947} INFO - Setting next_dagrun for retail_hourly_etl to 2025-10-05 05:00:00+00:00, run_after=2025-10-05 06:00:00+00:00
+[2025-10-05T05:21:42.422+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 0.455 seconds
+[2025-10-05T05:22:13.205+0000] {processor.py:161} INFO - Started process (PID=513) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:22:13.212+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:22:13.223+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:22:13.221+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:22:13.329+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:22:13.537+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:22:13.536+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:22:13.674+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 0.557 seconds
+[2025-10-05T05:22:46.936+0000] {processor.py:161} INFO - Started process (PID=534) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:22:46.959+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:22:47.025+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:22:47.013+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:22:47.812+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:22:48.543+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:22:48.542+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:22:49.057+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 2.332 seconds
+[2025-10-05T05:23:20.632+0000] {processor.py:161} INFO - Started process (PID=552) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:23:20.636+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:23:20.663+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:23:20.661+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:23:21.169+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:23:21.903+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:23:21.902+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:23:22.222+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:23:22.220+0000] {dag.py:3947} INFO - Setting next_dagrun for retail_hourly_etl to 2025-10-05 05:00:00+00:00, run_after=2025-10-05 06:00:00+00:00
+[2025-10-05T05:23:22.493+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 2.168 seconds
+[2025-10-05T05:23:55.447+0000] {processor.py:161} INFO - Started process (PID=562) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:23:55.566+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:23:55.637+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:23:55.634+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:23:56.195+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:23:56.777+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:23:56.776+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:23:56.991+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:23:56.991+0000] {dag.py:3947} INFO - Setting next_dagrun for retail_hourly_etl to 2025-10-05 05:00:00+00:00, run_after=2025-10-05 06:00:00+00:00
+[2025-10-05T05:23:57.101+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 2.071 seconds
+[2025-10-05T05:24:27.620+0000] {processor.py:161} INFO - Started process (PID=572) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:24:27.623+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:24:27.626+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:24:27.626+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:24:27.678+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:24:27.749+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:24:27.748+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:24:27.806+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:24:27.805+0000] {dag.py:3947} INFO - Setting next_dagrun for retail_hourly_etl to 2025-10-05 05:00:00+00:00, run_after=2025-10-05 06:00:00+00:00
+[2025-10-05T05:24:27.895+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 0.287 seconds
+[2025-10-05T05:25:00.216+0000] {processor.py:161} INFO - Started process (PID=594) to work on /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:25:00.243+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_hourly_etl.py for tasks to queue
+[2025-10-05T05:25:00.330+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:25:00.318+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:25:00.644+0000] {processor.py:840} INFO - DAG(s) 'retail_hourly_etl' retrieved from /opt/airflow/dags/retail_hourly_etl.py
+[2025-10-05T05:25:01.092+0000] {logging_mixin.py:188} INFO - [2025-10-05T05:25:01.092+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-05T05:25:01.421+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_hourly_etl.py took 1.478 seconds

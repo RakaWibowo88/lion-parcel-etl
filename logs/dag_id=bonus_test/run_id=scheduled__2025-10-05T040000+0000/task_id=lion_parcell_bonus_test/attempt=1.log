@@ -1,0 +1,54 @@
+[2025-10-05T05:09:57.464+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-05T05:09:57.878+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bonus_test.lion_parcell_bonus_test scheduled__2025-10-05T04:00:00+00:00 [queued]>
+[2025-10-05T05:09:57.915+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bonus_test.lion_parcell_bonus_test scheduled__2025-10-05T04:00:00+00:00 [queued]>
+[2025-10-05T05:09:57.917+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-10-05T05:09:57.984+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): lion_parcell_bonus_test> on 2025-10-05 04:00:00+00:00
+[2025-10-05T05:09:58.073+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'bonus_test', 'lion_parcell_bonus_test', 'scheduled__2025-10-05T04:00:00+00:00', '--job-id', '50', '--raw', '--subdir', 'DAGS_FOLDER/bonus_test.py', '--cfg-path', '/tmp/tmpkrgm9r9f']
+[2025-10-05T05:09:58.090+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=209) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-10-05T05:09:58.104+0000] {standard_task_runner.py:64} INFO - Started process 215 to run task
+[2025-10-05T05:09:58.095+0000] {standard_task_runner.py:91} INFO - Job 50: Subtask lion_parcell_bonus_test
+[2025-10-05T05:09:58.557+0000] {task_command.py:426} INFO - Running <TaskInstance: bonus_test.lion_parcell_bonus_test scheduled__2025-10-05T04:00:00+00:00 [running]> on host 4be1e35054da
+[2025-10-05T05:09:59.097+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='bonus_test' AIRFLOW_CTX_TASK_ID='lion_parcell_bonus_test' AIRFLOW_CTX_EXECUTION_DATE='2025-10-05T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-05T04:00:00+00:00'
+[2025-10-05T05:09:59.103+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-05T05:09:59.216+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-05T05:09:59.224+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/public/lion_parcell_bonus_test.py || exit 3']
+[2025-10-05T05:09:59.262+0000] {subprocess.py:86} INFO - Output:
+[2025-10-05T05:10:26.262+0000] {subprocess.py:93} INFO - 2025-10-05 05:10:26,261 - INFO - Running DBT command: run --select tag:lion_parcell_bonus_test --target prod --project-dir /opt/***/dbt --profiles-dir /opt/***/dbt
+[2025-10-05T05:10:27.366+0000] {subprocess.py:93} INFO - [0m05:10:27  Running with dbt=1.8.9
+[2025-10-05T05:10:39.414+0000] {subprocess.py:93} INFO - [0m05:10:39  Registered adapter: postgres=1.8.2
+[2025-10-05T05:10:45.052+0000] {subprocess.py:93} INFO - [0m05:10:45  Unable to do partial parsing because of a version mismatch
+[2025-10-05T05:11:00.696+0000] {subprocess.py:93} INFO - [0m05:11:00  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+[2025-10-05T05:11:00.707+0000] {subprocess.py:93} INFO - There are 1 unused configuration paths:
+[2025-10-05T05:11:00.715+0000] {subprocess.py:93} INFO - - models.lionparcel_dwh.staging
+[2025-10-05T05:11:01.855+0000] {subprocess.py:93} INFO - [0m05:11:01  Found 3 models, 1 source, 433 macros
+[2025-10-05T05:11:01.875+0000] {subprocess.py:93} INFO - [0m05:11:01
+[2025-10-05T05:11:02.553+0000] {subprocess.py:93} INFO - [0m05:11:02
+[2025-10-05T05:11:02.570+0000] {subprocess.py:93} INFO - [0m05:11:02  Finished running  in 0 hours 0 minutes and 0.67 seconds (0.67s).
+[2025-10-05T05:11:02.587+0000] {subprocess.py:93} INFO - [0m05:11:02  Encountered an error:
+[2025-10-05T05:11:02.591+0000] {subprocess.py:93} INFO - Database Error
+[2025-10-05T05:11:02.599+0000] {subprocess.py:93} INFO -   connection to server at "localhost" (::1), port 5432 failed: Connection refused
+[2025-10-05T05:11:02.606+0000] {subprocess.py:93} INFO -   	Is the server running on that host and accepting TCP/IP connections?
+[2025-10-05T05:11:02.608+0000] {subprocess.py:93} INFO -   connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+[2025-10-05T05:11:02.611+0000] {subprocess.py:93} INFO -   	Is the server running on that host and accepting TCP/IP connections?
+[2025-10-05T05:11:02.614+0000] {subprocess.py:93} INFO - 
+[2025-10-05T05:11:08.620+0000] {subprocess.py:97} INFO - Command exited with return code 3
+[2025-10-05T05:11:08.648+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-05T05:11:09.019+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 3.
+[2025-10-05T05:11:09.088+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=bonus_test, task_id=lion_parcell_bonus_test, run_id=scheduled__2025-10-05T04:00:00+00:00, execution_date=20251005T040000, start_date=20251005T050957, end_date=20251005T051109
+[2025-10-05T05:11:09.251+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 50 for task lion_parcell_bonus_test (Bash command failed. The command returned a non-zero exit code 3.; 215)
+[2025-10-05T05:11:09.325+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-10-05T05:11:09.524+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-05T05:11:09.534+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

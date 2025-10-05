@@ -30,10 +30,10 @@ source_transaction_lion_parcel = BashOperator(
     dag=dag,
 )
 
-retail_transactions = BashOperator(
-    task_id='retail_transactions',
-    bash_command='python /opt/airflow/public/retail_transactions.py || exit 3',
+retail_transactions_scd = BashOperator(
+    task_id='retail_transactions_scd',
+    bash_command='python /opt/airflow/public/retail_transactions_scd.py || exit 3',
     dag=dag,
 )
 
-source_transaction_lion_parcel >> retail_transactions
+source_transaction_lion_parcel >> retail_transactions_scd

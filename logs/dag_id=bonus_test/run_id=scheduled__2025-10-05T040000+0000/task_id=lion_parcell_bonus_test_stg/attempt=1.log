@@ -1,0 +1,58 @@
+[2025-10-05T05:08:21.993+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-05T05:08:22.106+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bonus_test.lion_parcell_bonus_test_stg scheduled__2025-10-05T04:00:00+00:00 [queued]>
+[2025-10-05T05:08:22.129+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bonus_test.lion_parcell_bonus_test_stg scheduled__2025-10-05T04:00:00+00:00 [queued]>
+[2025-10-05T05:08:22.131+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-10-05T05:08:22.182+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): lion_parcell_bonus_test_stg> on 2025-10-05 04:00:00+00:00
+[2025-10-05T05:08:22.240+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'bonus_test', 'lion_parcell_bonus_test_stg', 'scheduled__2025-10-05T04:00:00+00:00', '--job-id', '47', '--raw', '--subdir', 'DAGS_FOLDER/bonus_test.py', '--cfg-path', '/tmp/tmp67jiv_5j']
+[2025-10-05T05:08:22.262+0000] {standard_task_runner.py:91} INFO - Job 47: Subtask lion_parcell_bonus_test_stg
+[2025-10-05T05:08:22.261+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=166) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-10-05T05:08:22.275+0000] {standard_task_runner.py:64} INFO - Started process 172 to run task
+[2025-10-05T05:08:22.541+0000] {task_command.py:426} INFO - Running <TaskInstance: bonus_test.lion_parcell_bonus_test_stg scheduled__2025-10-05T04:00:00+00:00 [running]> on host 4be1e35054da
+[2025-10-05T05:08:24.383+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='bonus_test' AIRFLOW_CTX_TASK_ID='lion_parcell_bonus_test_stg' AIRFLOW_CTX_EXECUTION_DATE='2025-10-05T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-05T04:00:00+00:00'
+[2025-10-05T05:08:24.517+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-05T05:08:41.078+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-05T05:08:46.608+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/public/lion_parcell_bonus_test_stg.py || exit 3']
+[2025-10-05T05:08:49.250+0000] {subprocess.py:86} INFO - Output:
+[2025-10-05T05:09:45.898+0000] {subprocess.py:93} INFO - /opt/***/public/lion_parcell_bonus_test_stg.py:74: DeprecationWarning: invalid escape sequence '\/'
+[2025-10-05T05:09:46.110+0000] {subprocess.py:93} INFO -   return codecs.decode(s, 'unicode_escape')
+[2025-10-05T05:09:51.724+0000] {subprocess.py:93} INFO - == List isi folder (public) ==
+[2025-10-05T05:09:51.747+0000] {subprocess.py:93} INFO - Total items : 8 | JSON files: 8
+[2025-10-05T05:09:51.798+0000] {subprocess.py:93} INFO - - result-json-0.json
+[2025-10-05T05:09:51.867+0000] {subprocess.py:93} INFO - - result-json-1.json
+[2025-10-05T05:09:51.887+0000] {subprocess.py:93} INFO - - result-json-2.json
+[2025-10-05T05:09:51.933+0000] {subprocess.py:93} INFO - - result-json-3.json
+[2025-10-05T05:09:51.952+0000] {subprocess.py:93} INFO - - result-json-4.json
+[2025-10-05T05:09:51.994+0000] {subprocess.py:93} INFO - - result-json-5.json
+[2025-10-05T05:09:52.028+0000] {subprocess.py:93} INFO - - result-json-6.json
+[2025-10-05T05:09:52.107+0000] {subprocess.py:93} INFO - - result-json-7.json
+[2025-10-05T05:09:52.155+0000] {subprocess.py:93} INFO - 
+[2025-10-05T05:09:52.184+0000] {subprocess.py:93} INFO - Download JSON
+[2025-10-05T05:09:52.213+0000] {subprocess.py:93} INFO - Downloaded: result-json-1.json
+[2025-10-05T05:09:52.217+0000] {subprocess.py:93} INFO - Downloaded: result-json-4.json
+[2025-10-05T05:09:52.259+0000] {subprocess.py:93} INFO - Downloaded: result-json-0.json
+[2025-10-05T05:09:52.297+0000] {subprocess.py:93} INFO - Downloaded: result-json-3.json
+[2025-10-05T05:09:52.315+0000] {subprocess.py:93} INFO - Downloaded: result-json-5.json
+[2025-10-05T05:09:52.336+0000] {subprocess.py:93} INFO - Downloaded: result-json-2.json
+[2025-10-05T05:09:52.366+0000] {subprocess.py:93} INFO - Downloaded: result-json-7.json
+[2025-10-05T05:09:52.394+0000] {subprocess.py:93} INFO - Downloaded: result-json-6.json
+[2025-10-05T05:09:52.443+0000] {subprocess.py:93} INFO - 
+[2025-10-05T05:09:52.477+0000] {subprocess.py:93} INFO - == Combine (detail per file) ==
+[2025-10-05T05:09:52.526+0000] {subprocess.py:93} INFO - OK -> Detail CSV : /tmp/***tmpjd26srij/combined_detail_per_file.csv
+[2025-10-05T05:09:52.620+0000] {subprocess.py:93} INFO - 
+[2025-10-05T05:09:52.667+0000] {subprocess.py:93} INFO - == Aggregate (FINAL: 1 baris per id) ==
+[2025-10-05T05:09:52.729+0000] {subprocess.py:93} INFO - Selesai -> FINAL CSV: /tmp/***tmpjd26srij/combined_table.csv
+[2025-10-05T05:09:52.799+0000] {subprocess.py:93} INFO - Selesai -> FINAL PQ : /tmp/***tmpjd26srij/combined_table.parquet
+[2025-10-05T05:09:52.823+0000] {subprocess.py:93} INFO - 
+[2025-10-05T05:09:52.854+0000] {subprocess.py:93} INFO - Preview FINAL:
+[2025-10-05T05:09:52.902+0000] {subprocess.py:93} INFO - id              runtime_date  load_time                                 Message
+[2025-10-05T05:09:52.918+0000] {subprocess.py:93} INFO - m1 2025-08-02T08:10:00+00:00   0.064805
+[2025-10-05T05:09:52.935+0000] {subprocess.py:93} INFO - m2 2025-08-02T08:10:00+00:00   0.063665
+[2025-10-05T05:09:52.960+0000] {subprocess.py:93} INFO - m3 2025-08-02T23:45:00+00:00   0.201156 {"Description": "High Priority Access"}
+[2025-10-05T05:09:52.996+0000] {subprocess.py:93} INFO - m4                      None        NaN
+[2025-10-05T05:09:53.005+0000] {subprocess.py:93} INFO - Data final berhasil di-load ke database.
+[2025-10-05T05:09:53.390+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-10-05T05:09:53.501+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-05T05:09:55.503+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=bonus_test, task_id=lion_parcell_bonus_test_stg, run_id=scheduled__2025-10-05T04:00:00+00:00, execution_date=20251005T040000, start_date=20251005T050822, end_date=20251005T050955
+[2025-10-05T05:09:55.938+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-10-05T05:09:56.748+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-05T05:09:56.756+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
