@@ -89,11 +89,11 @@ Edit `docker-compose.yml` untuk sesuaikan kredensial database production:
 ```yaml
 environment:
   # ... env lainnya
-  DWH_USER: postgres           # ⬅️ ganti sesuai DB prod
-  DWH_PASSWORD: postgres       # ⬅️ ganti sesuai DB prod
+  DWH_USER: postgres           # ganti sesuai DB prod
+  DWH_PASSWORD: postgres       # ganti sesuai DB prod
   DWH_HOST: host.docker.internal
   DWH_PORT: "5432"
-  DWH_DATABASE: postgres       # ⬅️ ganti sesuai DB prod
+  DWH_DATABASE: postgres       # ganti sesuai DB prod
 ```
 
 **Penting**: 
@@ -267,24 +267,6 @@ Library yang dipakai (dari `requirements.txt`):
 - **Web Scraping**: `requests`, `beautifulsoup4`
 - **Excel**: `openpyxl`
 
-## 🤝 Contributing
-
-1. Fork repository
-2. Create feature branch: `git checkout -b feature/nama-fitur`
-3. Commit changes: `git commit -m 'Add fitur baru'`
-4. Push to branch: `git push origin feature/nama-fitur`
-5. Submit Pull Request
-
-## 📄 License
-
-MIT License - lihat file LICENSE untuk detail
-
 ## 👤 Author
 
-Nama Kamu - [GitHub Profile](https://github.com/username)
-
-## 🔗 Links
-
-- [Apache Airflow Docs](https://airflow.apache.org/docs/)
-- [DBT Docs](https://docs.getdbt.com/)
-- [Docker Compose Docs](https://docs.docker.com/compose/)
+Raka Wibowo
