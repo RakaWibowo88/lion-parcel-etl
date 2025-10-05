@@ -1,14 +1,15 @@
- <!--flow soal pertama  -->
+# Lion Parcel Task 1,2
 jika source berubah 
 update schema_punten.source_transaction_lion_parcel
 set last_status = 'DONE'
-where id = 3;
+where id = 3; 
 
 lalu jalanin public\source_transaction_lion_parcel.py
-untuk menarik data truncate insert ke table staging (public.stg_retail_transactions)
+untuk menarik data truncate insert ke table staging (public.stg_retail_transactions) apa adanya dengan source
 
-setelah itu jalanin public\retail_transactions.py
-untuk melakukan update insert yang sesuai dengan soal
+setelah itu jalanin public\retail_transactions.py 
+untuk melakukan update insert yang sesuai dengan soal (update insert menggunakan dbt yang dimana materialized nya adalah incremental) dengan unique key adalah ID 
+dan menggunakan logic dbt untuk soft delete, sehingga dapat dilihat jika last_status berubah menjadi done akan terisi kolom deleted_at
 
 
  <!--Database yang digunakan adalah database local jadi silahkan untuk menyesuaikan jika ingin test  -->
